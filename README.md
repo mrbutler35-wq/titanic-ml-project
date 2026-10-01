@@ -12,20 +12,20 @@ This repository keeps the model training and model serving environments separate
 
 ## Current Validated Model Performance
 
-The model was retrained with the pipeline in this repository and evaluated on a stratified 80/20 holdout split.
+The model was evaluated on a stratified 80/20 holdout split using the deterministic training pipeline.
 
 - Test set size: 179 passengers
-- Accuracy: 0.8156
-- Precision: 0.7900
-- Recall: 0.7101
-- F1-score: 0.7485
-- Confusion matrix: [[97, 13], [20, 49]]
+- Accuracy: 0.8436
+- Precision: 0.8475
+- Recall: 0.7246
+- F1-score: 0.7812
+- Confusion matrix: [[101, 9], [19, 50]]
 
 Interpretation:
-- TN = 97
-- FP = 13
-- FN = 20
-- TP = 49
+- TN = 101
+- FP = 9
+- FN = 19
+- TP = 50
 
 ## Architecture
 

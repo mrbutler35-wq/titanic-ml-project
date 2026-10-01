@@ -1,0 +1,72 @@
+{
+  "model_type": "RandomForestClassifier",
+  "training_date": "2026-09-30T22:27:52.928525",
+  "accuracy": 0.8435754189944135,
+  "precision": 0.847457627118644,
+  "recall": 0.7246376811594203,
+  "f1": 0.78125,
+  "test_size": 179,
+  "confusion_matrix": [
+    [
+      101,
+      9
+    ],
+    [
+      19,
+      50
+    ]
+  ],
+  "feature_names": [
+    "Pclass",
+    "Sex",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "Embarked",
+    "FamilySize",
+    "IsAlone",
+    "Title",
+    "AgeGroup",
+    "FareGroup"
+  ],
+  "model_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 10,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 5,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": null,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "preprocessing_info": {
+    "imputation_strategy": {
+      "Age": "median",
+      "Fare": "median",
+      "Embarked": "most_frequent",
+      "Title": "most_frequent",
+      "AgeGroup": "most_frequent",
+      "FareGroup": "most_frequent"
+    },
+    "new_features": [
+      "FamilySize",
+      "IsAlone",
+      "Title",
+      "AgeGroup",
+      "FareGroup"
+    ],
+    "encoding": "OneHotEncoder(handle_unknown='ignore')"
+  }
+}
